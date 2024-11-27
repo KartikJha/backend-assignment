@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Movie, MovieDocument } from '../models/movie.schema';
-import { CreateMovieDto } from './dto/create-movie.dto';
+import { CreateMovieDto } from '../list/dto/create-movie.dto';
 
 @Injectable()
 export class MoviesService {

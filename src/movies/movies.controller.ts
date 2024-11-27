@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { MoviesService } from './movies.service';
-import { CreateMovieDto } from './dto/create-movie.dto';
+import { CreateMovieDto } from '../list/dto/create-movie.dto';
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('Movies')
