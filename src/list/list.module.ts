@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { MoviesController } from './list.controller';
+import { ListController } from './list.controller';
 import { ListService } from './list.service';
 import { Movie, MovieSchema } from '../models/movie.schema';
 
 @Module({
   imports: [
-    MongooseModule.forFeature([{ name: Movie.name, schema: MovieSchema }]), 
+    MongooseModule.forFeature([{ name: Movie.name, schema: MovieSchema }]),
   ],
-  controllers: [MoviesController],
+  controllers: [ListController],
   providers: [ListService],
 })
-export class MoviesModule {}
+export class ListModule {}
