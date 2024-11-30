@@ -3,7 +3,7 @@ import { ListService } from './list.service';
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('List')
-@Controller('List')
+@Controller('list')
 export class ListController {
   constructor(private readonly listService: ListService) {}
 

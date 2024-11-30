@@ -1,12 +1,12 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document, Schema as MongooseSchema } from 'mongoose';
+import { Document } from 'mongoose';
 
 export type ListDocument = List & Document;
 
 @Schema()
 export class List {
-  @Prop({ type: MongooseSchema.Types.ObjectId, required: true })
-  userId: MongooseSchema.Types.ObjectId;
+  @Prop({ type: String, required: true })
+  userId: string;
 
   @Prop({
     type: [
